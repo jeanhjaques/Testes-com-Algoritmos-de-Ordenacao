@@ -30,6 +30,6 @@ public class Main
         double tempo = (double)(tempoFinal - tempoInicial)/1000000000;
         String tempoFormatado = String.format("%.6f", tempo);
 
-        System.out.println(resultado);
+        System.out.println(tempoFormatado);
     }
 }
