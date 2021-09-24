@@ -28,6 +28,29 @@ public class Ordenacao{
 		return vetor;
 	}
 	
+	//QuickSort - Ordenação
+	private int dividir(int[] vetor, int inicio, int fim) {
+    	int pivo, pontEsq, pontDir = fim;
+	pontEsq = inicio + 1;
+	pivo = vetor[inicio];
+		
+	 while(pontEsq <= pontDir) {
+	 	while(pontEsq <= pontDir && vetor[pontEsq] <= pivo) {
+		pontEsq++;
+	 }
+	 while(pontDir >= pontEsq && vetor[pontDir] > pivo) {
+		pontDir--;
+	 }
+	 if(pontEsq < pontDir) {
+	 	trocar(vetor, pontDir, pontEsq);
+		pontEsq++;
+		pontDir--;
+	      }
+	 }
+	    trocar(vetor, inicio, pontDir);
+	    return pontDir;
+	  }
+
 	//ShellSort - Ordenacao por incrementos diminutos
 	public static int[] shellSort(int[] vetor){
 	    int incremento = 1;
