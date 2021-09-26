@@ -4,7 +4,7 @@ Esse projeto envolve testes com algoritmos de ordenação, a atividade foi propo
 
 # Como executar o programa
 # Requisitos:
- - Java 8 ou instalado na máquina
+ - Java 8
 # Como executar:
  *Você pode optar por executar cada .java separado, seguindo a ordem: Calculos.java - Ordenacao.java - Main.java
   *Ex: javac Calculos.java
